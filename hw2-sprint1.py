@@ -92,7 +92,7 @@ class CarRental:
         pass
             
 
-# Write the driver to test your class.    
+
 def main():
     pass
 
@@ -178,7 +178,7 @@ class TestCarClass(unittest.TestCase):
         car_rental_empty = CarRental()
         with patch('sys.stdout', new=StringIO()) as fakeOutput:
             car_rental_empty.display_all()            
-            self.assertEqual(fakeOutput.getvalue(), 'There is no cars in inventory\n')
+            self.assertEqual(fakeOutput.getvalue(), 'There are no cars in current inventory\n')
 
 
 if __name__ == "__main__":
